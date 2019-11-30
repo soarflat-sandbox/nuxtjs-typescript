@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div>
-      <logo />
       <h1 class="title">nuxtjs-typescript</h1>
       <h2 class="subtitle">My primo Nuxt.js project</h2>
       <UserInfo :user="{ firstName: 'John', lastName: 'Doe' }" />
+      <UsingVuex />
     </div>
   </div>
 </template>
@@ -12,9 +12,11 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 import UserInfo from '~/components/UserInfo.vue'
+import UsingVuex from '~/components/UsingVuex.vue'
 
 @Component({
   components: {
+    UsingVuex,
     UserInfo
   }
 })
